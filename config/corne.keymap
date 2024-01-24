@@ -11,7 +11,7 @@
 
 &mt {
         tapping-term= <300>;
-}
+};
 
 / {
         keymap {
