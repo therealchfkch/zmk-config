@@ -24,17 +24,17 @@
 / {
         keymap {
                 compatible = "zmk,keymap";
-
+// Z  = Y because of german layout, so we are actually qwertz
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  Q  |  W  |  E  |  R  |  T   |                        |  Z  |  U   |  I  |  O  |  P  |  '   |
+// | ESC  |  Q  |  W  |  E  |  R  |  T   |                        |  Y  |  U   |  I  |  O  |  P  |  '   |
 // | CTRL |  A  |  S  |  D  |  F  |  G   |                        |  H  |  J   |  K  |  L  |  ;  |  -   |
-// | SHFT |  Y  |  X  |  C  |  V  |  B   |                        |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B   |                        |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | FNS | SPC | NUM BSPC |                    | TAB | ENT  | ALT |  
                         bindings = <
-   &kp ESC   &kp Q      &kp W      &kp E        &kp R       &kp T    &kp Z &kp U  &kp I     &kp O   &kp P    &kp SQT
+   &kp ESC   &kp Q      &kp W      &kp E        &kp R       &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp SQT
    &kp LCTRL &mt LGUI A &mt LALT S &mt LSHIFT D &mt LCTRL F &kp G    &kp H &mt LCTRL J  &mt LSHIFT K     &mt LALT L   &mt LGUI SEMI &kp MINUS
-   &kp LSHFT &kp Y      &kp X      &kp C        &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp LSHFT &kp Z      &kp X      &kp C        &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &mo FNS &kp SPACE &lt NUMBERS BSPC                 &lt SYMBOLS TAB &kp RET &kp LALT
                         >;
                 };
